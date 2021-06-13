@@ -91,5 +91,47 @@ namespace FindMaxTest
             ///Assert
             Assert.AreEqual(expected, result);
         }
+        [Test]
+        public void As_Given_Stringfirst_Return_Samevalue()
+        {
+            Maximum maximum = new Maximum();
+            ///Arrange
+            string first = "John";
+            string second = "Clarke";
+            string third = "johnson";
+            string expected = "John";
+            ///Act
+            string result = maximum.FindStringMax(first, second, third);
+            //Assert
+            Assert.AreEqual(expected, result);
+        }
+        [Test]
+        public void As_Given_Stringsecond_Return_Samevalue()
+        {
+            Maximum maximum = new Maximum();
+            ///Arrange
+            string first = "Sai";
+            string second = "Ram";
+            string third = "Bob";
+            string expected = "Ram";
+            ///Act
+            string result = maximum.FindStringMax(first, second, third);
+            //Assert
+            Assert.AreEqual(expected, result);
+        }
+        [Test]
+        public void As_Given_Stringthird_Return_Samevalue()
+        {
+            Maximum maximum = new Maximum();
+            ///Arrange
+            string first = "Apple";
+            string second = "Mango";
+            string third = "Grapes";
+            string expected = "Grapes";
+            ///Act
+            string result = maximum.FindStringMax(first, second, third);
+            //Assert
+            Assert.AreEqual(expected, result);
+        }
     }
 }
