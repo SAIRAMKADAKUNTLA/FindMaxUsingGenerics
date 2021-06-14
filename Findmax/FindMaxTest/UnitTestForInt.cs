@@ -96,10 +96,10 @@ namespace FindMaxTest
         {
             Maximum maximum = new Maximum();
             ///Arrange
-            string first = "John";
+            string first = "Johnson";
             string second = "Clarke";
-            string third = "johnson";
-            string expected = "John";
+            string third = "Jobi";
+            string expected = "Johnson";
             ///Act
             string result = maximum.FindStringMax(first, second, third);
             //Assert
@@ -111,9 +111,9 @@ namespace FindMaxTest
             Maximum maximum = new Maximum();
             ///Arrange
             string first = "Sai";
-            string second = "Ram";
+            string second = "Sairam";
             string third = "Bob";
-            string expected = "Ram";
+            string expected = "Sairam";
             ///Act
             string result = maximum.FindStringMax(first, second, third);
             //Assert
@@ -126,8 +126,8 @@ namespace FindMaxTest
             ///Arrange
             string first = "Apple";
             string second = "Mango";
-            string third = "Grapes";
-            string expected = "Grapes";
+            string third = "Watermelon";
+            string expected = "Watermelon";
             ///Act
             string result = maximum.FindStringMax(first, second, third);
             //Assert
